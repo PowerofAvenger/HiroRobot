@@ -24,17 +24,17 @@
       "TOKEN": {
          "description": "Your bot token. Get one from @BotFather duh",
          "required": true,
-         "value": ""
+         "value": "5046696779:AAEOB3ojcT7vc9HaX15YUWrhJNKXaXmIugM"
       },
       "API_ID": {
          "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": ""
+         "value": "8424747"
       },
       "API_HASH": {
          "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": ""
+         "value": "8c1cf9dc795e9a2a69e80b068c8ad2a7"
       },    
       "SQLALCHEMY_DATABASE_URI": {
          "description": "Your postgres sql db, empty this field if you dont have one.",
@@ -44,17 +44,17 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "945137470"
+         "value": "2070119160"
      },
 
       "STRING_SESSION": {
          "description": "Fill with telethon string session.",
          "required": true,
-         "value": "" 
+         "value": "1AZWarzUBuwug36XmKuGwEmfp0-d1bHgU80q6VZnBiEaN17mQ5IjcN0h9yHAg166baVpm7eF8sKZcT9P1YEseSAeoQfQlEOFlD9ZtsyLj8GIJytUC-9rPEVuoAmtE6HEmMM7BO768KTR_xo8D_HaC3vCjwv0EqrBhj702U7Cfe2oY5U68_C0LHQSoMDFiKJIsfeliKaKXrOLiQwCta9qZeU8B4nt-EFux0K5KwgFYG3gp33vZ5GlygN5RYQUiXwTZM4SAMpjWx1QJVbSWmtVDB_T-_XHa8KInouWBm3IZGylPUkbL5tvAQ60TRd-VuvWrE4yXnxZ3SgWmNMOUSDKqwWDUulYv1ww=" 
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
-        "value": ""
+        "value": "e6c6066c-c5e2-4508-9ec9-fd0d42c9ec87"
       },
       "HEROKU_APP_NAME": {
         "description": "Enter the Heroku app name here (Must an exact same name with your input above).",
@@ -62,32 +62,37 @@
       },
       "BOT_USERNAME": {
          "description": "username of your bot without the @",
-         "value": "siestaxbot"
+         "value": "NezukoXRobot"
       },
 
       "BOT_ID": {
          "description": "to get your bot_id using other bot or userbot",
-         "value": ""
+         "value": "5046696779"
       },
 
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "saint_foire"
+         "value": "Hiro_Kun_14"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
          "required": true,
-         "value": "machinaxsupport"
+         "value": "NezukoXSupport"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
          "required": true,
-         "value": ""
+         "value": "mongodb+srv://Nezuko:nezuko1234@nezuko.kprej.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
       },
       "REDIS_URL": {
          "description": "Required a redis url",
          "required": true,
-         "value": ""
+         "value": "redis://Hiro:Hiro_123@redis-13621.c264.ap-south-1-1.ec2.cloud.redislabs.com:13621/Hiro"
+      },
+       "DATABASE_URL": {
+         "description": "Required for database connections.",
+         "required": true
+         "value": "postgres://tipmdbxc:Q32afCfnGjnI27Zo25KJj9ooETl9n2mg@castor.db.elephantsql.com/tipmdbxc"
       },
       "IBM_WATSON_CRED_URL": {
          "description": "This is required for the speech to text module. Get your USERNAME from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html",
@@ -100,22 +105,22 @@
      "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
          "required": true,
-         "value": "-1001237968047"
+         "value": "-1001695837933"
       },
       "JOIN_LOGGER": {
          "description": "A channel where bot will print who added it to what group, useful during debugging or spam handling.",
          "required": true,
-         "value": "-1001180007354"
+         "value": "-1001695837933"
       },      
       "CASH_API_KEY": {
          "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
          "required": true,
-         "value": "-xyz"
+         "value": "GLWQMY1M0629M823"
       },
       "TIME_API_KEY": {
          "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
          "required": true,
-         "value": "-xyz"
+         "value": "B3G24WBL6ATY"
       }, 
 
       "OPENWEATHERMAP_ID": {
@@ -132,12 +137,13 @@
         "ARQ_API": {
             "description": "Get this from @ARQRobot.",
             "required": true
+            "value": "QPENUQ-HJZQQC-ZWAOGJ-JNPZIN-ARQ"
         },
 
       "SPAMWATCH_API": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
          "required": false,
-         "value": ""
+         "value": "UJDAwhcp9p_bKSFCuEgCJFhlHtCAXaOB79M~YiTtdeLq9rXJFYij9wcwfTeiMToR"
       }, 
       "STRICT_GBAN": {
          "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
@@ -208,6 +214,7 @@
         "ARQ_API": {
             "description": "Get this from @ARQRobot.",
             "required": true
+            "value": "QPENUQ-HJZQQC-ZWAOGJ-JNPZIN-ARQ"
         },
       "BAN_STICKER": {
          "description": "ID of the sticker you want to use when banning people.",
@@ -217,12 +224,12 @@
       "WALL_API": {
          "description": "Required for wallpaper. Get your's from https://wall.alphacoders.com/",
          "required": false,
-         "value": ""
+         "value": "6950f559377140a4e1594c564cdca6a3"
       },
       "REM_BG_API_KEY": {
          "description": "Required for remove background editing. Get your's from https://www.remove.bg/api#remove-background/",
          "required": false,
-         "value": ""
+         "value": "2XAiZCMoaWM7G2Y2RBgXD38n"
       }
       
    }
