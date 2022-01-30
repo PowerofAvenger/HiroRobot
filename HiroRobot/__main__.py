@@ -225,16 +225,16 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "about_button"), callback_data="Hiro_"),
+                            InlineKeyboardButton(
+                                text=gs(chat.id, "add_bot_to_group_button"), url="t.me/NezukoXRobot?startgroup=new"),
                         ],
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "help_button"), callback_data="help_back"),
+                            InlineKeyboardButton(text=gs(chat.id, "about_button"), callback_data="Hiro_"),
                             InlineKeyboardButton(text=gs(chat.id, "inline_button"), switch_inline_query_current_chat=""),
                         ],
                         [
-                            InlineKeyboardButton(
-                                text=gs(chat.id, "add_bot_to_group_button"), url="t.me/Hiroxbot?startgroup=new"),
-                        ]
+                            InlineKeyboardButton(text=gs(chat.id, "help_button"), callback_data="help_back"),
+                        ]                                   
                     ]
                 ),
                 parse_mode=ParseMode.MARKDOWN,
