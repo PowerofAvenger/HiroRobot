@@ -1,3 +1,4 @@
+'''
 import asyncio
 import os
 import sys
@@ -853,3 +854,4 @@ async def cancel_task_button(_, query: CallbackQuery):
             query.inline_message_id,
             keyb,
         )
+'''
