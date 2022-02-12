@@ -1,3 +1,4 @@
+'''
 from os import remove
 
 from pyrogram import filters
@@ -164,3 +165,4 @@ async def nsfw_enable_disable(_, message):
         await message.reply_text(
             "`Unknown Suffix, Use /antinsfw [enable|disable]`"
         )
+'''
