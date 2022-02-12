@@ -1,5 +1,5 @@
 # AI Chat (C) 2020-2021 by @InukaAsith
-
+'''
 import emoji
 import re
 import aiohttp
@@ -438,3 +438,4 @@ def helps(chat):
     return gs(chat, "chatbot_help")
 
 __mod_name__ = "Chatbot"
+'''
