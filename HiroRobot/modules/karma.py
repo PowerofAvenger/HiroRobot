@@ -1,3 +1,4 @@
+'''
 import asyncio
 from pyrogram import filters
 from aiohttp import ClientSession
@@ -202,3 +203,4 @@ async def captcha_state(_, message):
         await message.reply_text("Disabled karma system.")
     else:
         await message.reply_text(usage)
+'''
