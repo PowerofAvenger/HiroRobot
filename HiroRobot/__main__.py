@@ -83,12 +83,12 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-Hiro_IMG = "https://telegra.ph/file/6d3e3ef24f64fb6e35df0.jpg"
+Hiro_IMG = "https://telegra.ph/file/600f9747ddfca639404f8.jpg"
 
 PM_START_TEXT = """
-🌸══════「 [{}](https://telegra.ph/file/ccc9b76512bfdda7036f0.jpg) 」══════🌸
+🌸══════「 [{}](https://telegra.ph/file/600f9747ddfca639404f8.jpg) 」══════🌸
 *ʜᴇʏ! {},*
-*ɪ ᴀᴍ 𝐍𝐞𝐳𝐮𝐤𝐨 ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ꜱᴇᴠᴇʀᴀʟ ꜱᴘᴇᴄɪᴀʟɪᴛɪᴇꜱ.*
+*ɪ ᴀᴍ 𝐴𝑘𝑖𝑛𝑜 ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ꜱᴇᴠᴇʀᴀʟ ꜱᴘᴇᴄɪᴀʟɪᴛɪᴇꜱ.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ╔═══════•❃•❀•❃════════╗
 ✓• *Uᴘᴛɪᴍᴇ:* {}
@@ -100,7 +100,7 @@ PM_START_TEXT = """
 """
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @saint_foire \
+ You can support the project by contacting @dr_strange_xd \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -194,7 +194,7 @@ def start(update: Update, context: CallbackContext):
                     InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="help_back"),
+                                InlineKeyboardButton(text=gs(chat.id, "Back 🔙"), callback_data="help_back"),
                             ]
                         ]
                     ),
@@ -226,14 +226,14 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text=gs(chat.id, "add_bot_to_group_button"), url="t.me/NezukoXRobot?startgroup=new"),
+                                text=gs(chat.id, "ᴀᴅᴅ ʙᴏᴛ ᴛᴏ ɢʀᴏᴜᴘ 💫💫"), url="t.me/NezukoXRobot?startgroup=new"),
                         ],
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "about_button"), callback_data="Hiro_"),
-                            InlineKeyboardButton(text=gs(chat.id, "inline_button"), switch_inline_query_current_chat=""),
+                            InlineKeyboardButton(text=gs(chat.id, "ᴀʙᴏᴜᴛ ᴍᴇʜ💫💫"), callback_data="Hiro_"),
+                            InlineKeyboardButton(text=gs(chat.id, "ᴄᴏᴏʟ ɪɴʟɪɴᴇ ᴍᴏᴅᴇ 💫💫"), switch_inline_query_current_chat=""),
                         ],
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "help_button"), callback_data="help_back"),
+                            InlineKeyboardButton(text=gs(chat.id, "Hᴇʟᴘ ᴏɴ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ʟɪᴋᴇ ᴀ ᴘʀᴏ"), callback_data="help_back"),
                         ]                                   
                     ]
                 ),
@@ -344,7 +344,7 @@ def help_button(update, context):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="help_back"),
+                            InlineKeyboardButton(text=gs(chat.id, "Back 🔙"), callback_data="help_back"),
                         ]
                     ]
                 ),
@@ -402,14 +402,13 @@ def Hiro_about_callback(update, context):
                         InlineKeyboardButton(text=gs(chat.id, "notes_button"), callback_data="Hiro_notes"),
                     ],
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "support_chat_link_button"), callback_data="Hiro_support"),
-                        InlineKeyboardButton(text="Credits", callback_data="Hiro_credit"),
+                        InlineKeyboardButton(text=gs(chat.id, "support_chat_link_button"), callback_data="Hiro_support"),                      
                     ],
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "source_button"), url="https://github.com/shiinobu/HiroRobot"),
+                        InlineKeyboardButton(text=gs(chat.id, "I ᴀᴍ ᴜɴᴅᴇʀ sʜɪᴇʟᴅ ᴡᴀʀʀɪᴏʀ ɴᴇᴛᴡᴏʀᴋ"), url="https://t.me/swnofficial"),
                     ],
                     [
-                    InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="Hiro_back"),
+                    InlineKeyboardButton(text=gs(chat.id, "Back 🔙"), callback_data="Hiro_back"),
                     ]
                 ]
             ),
@@ -428,14 +427,14 @@ def Hiro_about_callback(update, context):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "about_button"), callback_data="Hiro_"),
+                            InlineKeyboardButton(text=gs(chat.id, "ᴀʙᴏᴜᴛ ᴍᴇʜ💫💫"), callback_data="Hiro_"),
                         ],
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "help_button"), callback_data="help_back"),
-                            InlineKeyboardButton(text=gs(chat.id, "inline_button"), switch_inline_query_current_chat=""),
+                            InlineKeyboardButton(text=gs(chat.id, "Hᴇʟᴘ ᴏɴ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ʟɪᴋᴇ ᴀ ᴘʀᴏ"), callback_data="help_back"),
+                            InlineKeyboardButton(text=gs(chat.id, "ᴄᴏᴏʟ ɪɴʟɪɴᴇ ᴍᴏᴅᴇ 💫💫"), switch_inline_query_current_chat=""),
                         ],
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/Hiroxbot?startgroup=new"),
+                            InlineKeyboardButton(text=gs(chat.id, "ᴀᴅᴅ ʙᴏᴛ ᴛᴏ ɢʀᴏᴜᴘ 💫💫"), url="t.me/Akeno_superbot?startgroup=new"),
                         ]
                     ]
                 ),
@@ -452,7 +451,7 @@ def Hiro_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="Hiro_"),
+                        InlineKeyboardButton(text=gs(chat.id, "Back 🔙"), callback_data="Hiro_"),
                     ]
                 ]
             ),
@@ -465,7 +464,7 @@ def Hiro_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="Hiro_"),
+                        InlineKeyboardButton(text=gs(chat.id, "Back 🔙"), callback_data="Hiro_"),
                     ]
                 ]
             ),
@@ -477,11 +476,11 @@ def Hiro_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "support_chat_link_button"), url="t.me/machinaxupport"),
-                        InlineKeyboardButton(text=gs(chat.id, "updates_channel_link_button"), url="https://t.me/machinaxupdate"),
+                        InlineKeyboardButton(text=gs(chat.id, ""), url="t.me/machinaxupport"),
+                        InlineKeyboardButton(text=gs(chat.id, ""), url="https://t.me/machinaxupdate"),
                     ],
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="Hiro_"),
+                        InlineKeyboardButton(text=gs(chat.id, "Back 🔙"), callback_data="Hiro_"),
                     ]
                 ]
             ),
@@ -502,7 +501,7 @@ def Hiro_about_callback(update, context):
                         InlineKeyboardButton(text="TheHamkerCat", url="https://github.com/TheHamkerCat"),
                     ],
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="Hiro_"),
+                        InlineKeyboardButton(text=gs(chat.id, "Back 🔙"), callback_data="Hiro_"),
                     ]
                 ]
             ),
@@ -523,7 +522,7 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="Hiro_"),
+                        InlineKeyboardButton(text=gs(chat.id, "Back 🔙"), callback_data="Hiro_"),
                     ]
                 ]
             ),
@@ -541,14 +540,14 @@ def Source_about_callback(update, context):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "about_button"), callback_data="Hiro_"),
+                            InlineKeyboardButton(text=gs(chat.id, "ᴀʙᴏᴜᴛ ᴍᴇʜ💫💫"), callback_data="Hiro_"),
                         ],
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "help_button"), callback_data="help_back"),
-                            InlineKeyboardButton(text=gs(chat.id, "inline_button"), switch_inline_query_current_chat=""),
+                            InlineKeyboardButton(text=gs(chat.id, "Hᴇʟᴘ ᴏɴ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ʟɪᴋᴇ ᴀ ᴘʀᴏ"), callback_data="help_back"),
+                            InlineKeyboardButton(text=gs(chat.id, "ᴄᴏᴏʟ ɪɴʟɪɴᴇ ᴍᴏᴅᴇ 💫💫"), switch_inline_query_current_chat=""),
                         ],
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/Hiroxbot?startgroup=new"),
+                            InlineKeyboardButton(text=gs(chat.id, "ᴀᴅᴅ ʙᴏᴛ ᴛᴏ ɢʀᴏᴜᴘ 💫💫"), url="t.me/Akeno_superbot?startgroup=new"),
                         ]
                     ]
                 ),
@@ -574,7 +573,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text=gs(chat.id, "group_help_button"),
+                                text=gs(chat.id, "Hᴇʟᴘ ᴏɴ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ʟɪᴋᴇ ᴀ ᴘʀᴏ"),
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
@@ -591,7 +590,7 @@ def get_help(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text=gs(chat.id, "group_help_button"),
+                            text=gs(chat.id, "Hᴇʟᴘ ᴏɴ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ʟɪᴋᴇ ᴀ ᴘʀᴏ"),
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ]
@@ -614,7 +613,7 @@ def get_help(update: Update, context: CallbackContext):
             InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="help_back"),
+                        InlineKeyboardButton(text=gs(chat.id, "Back 🔙"), callback_data="help_back"),
                     ]
                 ]
             ),
@@ -690,7 +689,7 @@ def settings_button(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text=gs(chat.id, "back_button"),
+                                text=gs(chat.id, "Back 🔙"),
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
@@ -762,7 +761,7 @@ def get_settings(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text=gs(chat.id, "group_settings_button"),
+                                text=gs(chat.id, "Settings!"),
                                 url="t.me/{}?start=stngs_{}".format(
                                     context.bot.username, chat.id
                                 ),
